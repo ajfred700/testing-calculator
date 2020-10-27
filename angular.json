@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "testing-calculato"
+    }
+  },
+  "defaultProject": "testing-calculato",
+  "cli": {
+    "analytics": false
+  }
 }
