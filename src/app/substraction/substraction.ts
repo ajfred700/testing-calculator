@@ -3,5 +3,5 @@ export function substraction(oper1,oper2){
 
     subs= oper1 - oper2
 
-    return subs;
+    return subs ;
 }
