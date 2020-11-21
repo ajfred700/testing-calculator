@@ -1,45 +1,36 @@
-import { addition } from "./addition"
+import { from } from 'rxjs';
+import { addition } from "./addition";
+describe('addition unit tests',() =>{
+  //Using AAA (Arrange-Act-Assert);
+  it('Should add 2 + 2 = 4',()=>{
+    //Arrange
+    let result  = 0;
 
-describe('addition unit tests', () => {
-    
-    
-it('Should add 2 + 2 = 4', () => {
+    //Act
+    result = addition(2,2);
 
-// Pattern AAA (Arrange - Act - Assert)
+    //Assert
+    expect(result).toBe(4);
+  })
+  xit('Should add 0 + -2 = -2',()=>{
+    //Arrange
 
-// Arrange
-let result = 0;
+    //Act
 
-// Act
-result = addition(2, 2);
+    //Assert
+  })
+  xit('Should add 3.0 + 0.1416 = 6.1416',()=>{
+    //Arrange
 
-// Assert
-expect(result).toBe(4);
+    //Act
+
+    //Assert
+  })
+  xit('Should add 2.0 + 0.7 = 2.7',()=>{
+    //Arrange
+
+    //Act
+
+    //Assert
+  })
 })
-
-xit('Should add 0 + -2 = -2', () => {
-// Arrange
-let result = 0;
-// Act
-result = addition(0, 2);
-// Assert
-expect(result).toBe(-2);
-})
-xit('Should add 3.0 + 0.1416 = 3.1416', () => {
-// Arrange
-let result = 0;
-// Act
-result = addition(3.0, 0.1416);
-// Assert
-expect(result).toBe(3.1416);
-})
-xit('Should add 2.0 + 0.7 = 2.7', () => {
-    // Arrange
-let result = 0;
-// Act
-result = addition(2.0, 0.7);
-// Assert
-expect(result).toBe(2.7);
-})
-
-})  
