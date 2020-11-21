@@ -5,9 +5,9 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ master, hotfixes, release, develop ]
+    branches: [ master, develop, hotfixes, release ]
   pull_request:
-    branches: [ master, hotfixes, release, develop ]
+    branches: [ master, develop, hotfixes, release ]
 
 jobs:
   build:
@@ -27,3 +27,4 @@ jobs:
     - run: npm ci
     - run: npm run test-headless
     - run: npm run build --if-present
+
