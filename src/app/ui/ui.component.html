@@ -1,0 +1,44 @@
+<div class="color">
+    <div class="container">
+    <h1>CALCULATOR </h1>
+    <div class="calculator ">
+  
+      <form>
+      <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span> 
+      <input id="operator1" [(ngModel)]="operator1" type="number" class="form-control operator1" name="operator1" placeholder="0.0">
+      </div>
+      
+      <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+      <input id="operator2" [(ngModel)]="operator2" type="number" class="form-control operator2" name="operator2" placeholder="0.0">
+      </div>
+      </form>
+      
+      <i class="glyphicon glyphicon-plus-sign addition-button"
+      (click)="addition()"></i>
+      
+      <i class=" glyphicon glyphicon-minus-sign substraction-button"
+      (click)="substraction()"></i>
+  
+      <i class="glyphicon glyphicon-remove-sign multiplication-button"
+      (click)="multiplication()"></i>
+  
+      <i class="glyphicon glyphicon-ban-circle division-button"
+      (click)="division()"></i>
+  
+      <i class="glyphicon glyphicon-chevron-up exp-button"
+      (click)="exp()"></i>
+
+      <i class="glyphicon glyphicon-th-large sqr-button "
+      (click)="sqr() "></i>
+
+      <i class="glyphicon glyphicon-th sqrt-button"
+      (click)="sqrt() "></i>
+  
+      </div>
+      
+      <span class="result">El resultado es: {{ result }}</span> 
+  </div>
+    </div>
+
